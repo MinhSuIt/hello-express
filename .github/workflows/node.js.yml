@@ -22,3 +22,10 @@ jobs:
           sudo git clone https://github.com/MinhSuIt/hello-express
           pwd
           ls -la
+    - name: install dependencies
+      run: |
+        npm install
+    - name: run app
+      run: |
+        npm run start
+    
