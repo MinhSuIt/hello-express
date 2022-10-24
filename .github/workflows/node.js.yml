@@ -1,0 +1,24 @@
+name: Laravel
+
+on:
+  push:
+    branches: [ "master" ]
+jobs:
+  clone:
+    name: clone code
+    runs-on: ubuntu-latest
+    steps:
+    - name: executing remote ssh commands using private key
+      uses: appleboy/ssh-action@master
+      with:
+        host: ${{ secrets.HOST }}
+        username: ${{ secrets.USERNAME }}
+        key: ${{ secrets.KEY }}
+        port: ${{ secrets.PORT }}
+        script: |
+          git --version
+          pwd
+          cd /var/www/html
+          sudo git clone https://github.com/MinhSuIt/hello-express
+          pwd
+          ls -la
