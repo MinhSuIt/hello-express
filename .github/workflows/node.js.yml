@@ -24,7 +24,6 @@ jobs:
           sudo git checkout master
           sudo git pull
           # https://github.com/MinhSuIt/hello-express
-          pwd
           cd hello-express
           npm install
           #npm run start #thay bằng pm2 để có thể thoát cmd
