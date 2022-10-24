@@ -24,6 +24,7 @@ jobs:
           ls -la
     - name: install dependencies
       run: |
+        cd hello-express
         npm install
     - name: run app
       run: |
