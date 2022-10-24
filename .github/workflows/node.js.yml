@@ -24,7 +24,8 @@ jobs:
           #sudo git clone https://github.com/MinhSuIt/hello-express
           sudo chmod -R 777 hello-express
           cd hello-express
-          sudo git pull
+          sudo git fetch --all
+          sudo git reset --hard origin/master
           # https://github.com/MinhSuIt/hello-express
           #cd hello-express
           npm install
