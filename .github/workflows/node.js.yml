@@ -1,4 +1,4 @@
-name: Laravel
+name: NodeJS
 
 on:
   push:
@@ -26,5 +26,8 @@ jobs:
           pwd
           cd hello-express
           npm install
-          npm run start
-    
+          npm run start #thay bằng pm2 để có thể thoát cmd
+    #khi có bất kì code gì thay đổi:
+    #đều pull code về
+    #nếu code thay đổi file package.json thì xóa package.lock và node_modules
+    #npm install và npm run start
