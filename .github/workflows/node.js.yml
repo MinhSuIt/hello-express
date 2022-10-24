@@ -29,5 +29,5 @@ jobs:
           npm run start #thay bằng pm2 để có thể thoát cmd
     #khi có bất kì code gì thay đổi:
     #đều pull code về
-    #nếu code thay đổi file package.json thì xóa package.lock và node_modules
-    #npm install và npm run start
+    #nếu code thay đổi file package.json thì xóa package.lock và node_modules rồi npm install
+    # chạy lại ứng dụng npm run start/pm2 run restart
