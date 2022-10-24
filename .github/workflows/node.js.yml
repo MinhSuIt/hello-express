@@ -19,12 +19,12 @@ jobs:
           git --version
           pwd
           cd /var/www/html/
-          sudo git clone https://github.com/MinhSuIt/hello-express
+          #sudo git clone https://github.com/MinhSuIt/hello-express
           #sudo chmod -R 777 hello-express
-          #cd hello-express
-          # sudo git pull
-          # https://github.com/MinhSuIt/hello-express
           cd hello-express
+          sudo git pull
+          # https://github.com/MinhSuIt/hello-express
+          #cd hello-express
           npm install
           #npm run start #thay bằng pm2 để có thể thoát cmd
     #khi có bất kì code gì thay đổi:
