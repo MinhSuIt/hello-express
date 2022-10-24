@@ -19,7 +19,7 @@ jobs:
           git --version
           pwd
           cd /var/www/html/
-          chmod -R 777 hello-express
+          sudo chmod -R 777 hello-express
           cd hello-express
           sudo git pull origin master
           # https://github.com/MinhSuIt/hello-express
