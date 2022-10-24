@@ -18,7 +18,9 @@ jobs:
         script: |
           git --version
           pwd
-          cd /var/www/html/hello-express
+          cd /var/www/html/
+          chmod -R 777 hello-express
+          cd hello-express
           sudo git pull origin master
           # https://github.com/MinhSuIt/hello-express
           pwd
