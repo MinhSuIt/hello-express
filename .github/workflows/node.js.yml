@@ -21,6 +21,7 @@ jobs:
           cd /var/www/html/
           sudo chmod -R 777 hello-express
           cd hello-express
+          sudo git checkout master
           sudo git pull
           # https://github.com/MinhSuIt/hello-express
           pwd
