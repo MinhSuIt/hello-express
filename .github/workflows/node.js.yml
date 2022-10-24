@@ -3,6 +3,8 @@ name: NodeJS
 on:
   push:
     branches: [ "master" ]
+    paths:
+      '!.github/**'
 jobs:
   clone:
     name: clone code
