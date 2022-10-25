@@ -21,15 +21,15 @@ jobs:
           git --version
           pwd
           #first time deploy
-          cd /var/www/html/
-          sudo git clone https://github.com/MinhSuIt/hello-express
-          cd hello-express
+          #cd /var/www/html/
+          #sudo git clone https://github.com/MinhSuIt/hello-express
+          #cd hello-express
 
           # ! first time
-          #cd /var/www/html/hello-express
-          #sudo chmod -R 777 ../hello-express
-          #sudo git fetch --all
-          #sudo git reset --hard origin/master
+          cd /var/www/html/hello-express
+          sudo chmod -R 777 ../hello-express
+          sudo git fetch --all
+          sudo git reset --hard origin/master
           ######
           sudo npm install
           #thay bằng pm2 để start ứng dụng có thể thoát cmd mà ko dùng npm run start bình thường
