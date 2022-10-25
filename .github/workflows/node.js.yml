@@ -24,7 +24,6 @@ jobs:
           cd /var/www/html/
           sudo git clone https://github.com/MinhSuIt/hello-express
           cd hello-express
-          npm install
 
           # ! first time
           #cd /var/www/html/hello-express
@@ -32,7 +31,7 @@ jobs:
           #sudo git fetch --all
           #sudo git reset --hard origin/master
           ######
-          npm install
+          sudo npm install
           #thay bằng pm2 để start ứng dụng có thể thoát cmd mà ko dùng npm run start bình thường
     #khi có bất kì code gì thay đổi:
     #đều pull code về
